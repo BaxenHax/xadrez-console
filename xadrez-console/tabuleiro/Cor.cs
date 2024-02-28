@@ -8,8 +8,8 @@ namespace xadrez_console.tabuleiro
 {
     enum Cor
     {
-        White,
-        Black,
+        Branca,
+        Preta,
         Amarela,
         Azul,
         Vermelha,
