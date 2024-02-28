@@ -1,0 +1,11 @@
+Bash nesta pasta e digitar:
+git clone https://github.com/acenelio/xadrez-console.git
+
+T - - - - - - -
+- - - T - - - -
+- - - - R - - -
+- - - - - - - -
+- - - - - - - -
+- - - - - - - -
+- - - - R - - -
+T - - - - T - T
