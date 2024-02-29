@@ -8,22 +8,15 @@ using xadrez_console.xadrez;
 class program
 {
     static void Main(string[] args)
+    
+    
     {
-        try
-        {
-            Tabuleiro tab = new Tabuleiro(8, 8);
 
-            tab.ColocarPeca(new Torre(tab, Cor.Preta), new Posicao(0, 0));
-            tab.ColocarPeca(new Torre(tab, Cor.Preta), new Posicao(1, 3));
-            tab.ColocarPeca(new Rei(tab, Cor.Preta), new Posicao(0, 9));
+        PosicaoXadrez pos = new PosicaoXadrez('C', 7);
+        Console.WriteLine(pos);
+        Console.WriteLine(pos.ToPosicao());
+        Console.ReadLine();
 
 
-            Tela.imprimirTabuleiro(tab);
-            Console.ReadLine();
-        }
-        catch (TabuleiroExcecao e)
-        {
-            Console.WriteLine(e.Message);
-        }
     }
 }
