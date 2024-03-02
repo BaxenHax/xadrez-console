@@ -12,11 +12,25 @@ class program
     
     {
 
-        PosicaoXadrez pos = new PosicaoXadrez('C', 7);
-        Console.WriteLine(pos);
-        Console.WriteLine(pos.ToPosicao());
-        Console.ReadLine();
+        try
+             {
+            Tabuleiro tab = new Tabuleiro(8, 8);
 
+            tab.ColocarPeca(new Torre(tab, Cor.Preta), new Posicao(0, 0));
+            tab.ColocarPeca(new Torre(tab, Cor.Preta), new Posicao(1, 3));
+            tab.ColocarPeca(new Rei(tab, Cor.Preta), new Posicao(0, 2));
+
+            tab.ColocarPeca(new Rei(tab, Cor.Branca), new Posicao(3, 5));
+
+
+            Tela.imprimirTabuleiro(tab);
+            Console.ReadLine();
+            }
+        catch (TabuleiroExcecao e)
+            {       
+            Console.WriteLine(e.Message);
+        }
+        
 
     }
 }
